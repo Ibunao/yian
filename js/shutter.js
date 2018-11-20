@@ -127,7 +127,7 @@
       var $curElem = this.$shutterItem.eq(this.curDisplay);
       var $nearlyElem = this.$shutterItem.not($curElem);
 
-      $curElem.css('zIndex', 20);
+      $curElem.css('zIndex', 50);
       $nearlyElem.each(function (i) {
         $(this).css('zIndex', ++ i);
       });
@@ -207,7 +207,7 @@
       var self = this;
 
       setTimeout(function () {
-        target.css('zIndex', 20);
+        target.css('zIndex', 50);
         cur.css('zIndex', self.curDisplay).html(backup);
         self.curDisplay = index;
         self.$shutterDesc.animate({bottom: 0}).find('p').text(self.shutterTitle);
@@ -224,12 +224,12 @@
       var $createElem = $('<div class="created"></div>');
       var movingVal = 0;
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
       $createElem.html(backup).css({
         position: 'absolute',
-        zIndex: 20,
+        zIndex: 50,
         left: 0,
         top: 0,
         overflow: 'hidden',
@@ -273,7 +273,7 @@
       var backup = $curElem.html();
       var speed = 0;
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
       for (var i = 0; i < 12; i ++) {
@@ -281,7 +281,7 @@
 
         $createElem.html(backup).css({
           position: 'absolute',
-          zIndex: 20,
+          zIndex: 50,
           left: this.shutterW / 12 * i,
           top: 0,
           overflow: 'hidden',
@@ -335,7 +335,7 @@
       var backup = $curElem.html();
       var speed = 0;
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
       for (var i = 0; i < 12; i ++) {
@@ -343,7 +343,7 @@
 
         $createElem.html(backup).css({
           position: 'absolute',
-          zIndex: 20,
+          zIndex: 50,
           left: 0,
           top: this.shutterH / 12 * i,
           overflow: 'hidden',
@@ -397,12 +397,12 @@
       var backup = $curElem.html();
       var $createElem = $('<div class="created"></div>');
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
       $createElem.html(backup).css({
         position: 'absolute',
-        zIndex: 20,
+        zIndex: 50,
         left: 0,
         top: 0,
         overflow: 'hidden',
@@ -432,7 +432,7 @@
       var iNow = 0;
       var speed = 0;
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
       for (var i = 0; i < 12; i ++) {
@@ -440,7 +440,7 @@
 
         $createElem.html(backup).css({
           position: 'absolute',
-          zIndex: 20,
+          zIndex: 50,
           left: this.shutterW / 12 * i,
           top: 0,
           overflow: 'hidden',
@@ -475,7 +475,7 @@
       var backup = $curElem.html();
       var coordinate = null;
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
       for (var i = 0; i < 24; i ++) {
@@ -521,10 +521,10 @@
       var $targetElem = this.$shutterItem.eq(index);
       var backup = $curElem.html();
 
-      $targetElem.css('zIndex', 19);
+      $targetElem.css('zIndex', 45);
       $curElem.find('img').fadeOut();
 
-      for (var i = 0; i < 20; i ++) {
+      for (var i = 0; i < 50; i ++) {
         var $createElem = $('<div class="created"></div>');
 
         $createElem.html(backup).css({
